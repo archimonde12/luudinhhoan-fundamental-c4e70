@@ -1,8 +1,8 @@
 //Insert the squence of Number
-let text=String(prompt("Enter a squence of Number, separated by commas(.)"))
+let text=String(prompt("Enter a squence of Number, separated by commas(,)"))
 
 //Take each number into array
-let array=(text.split("."))
+let array=(text.split(","))
 //check array
 console.log(array)
 

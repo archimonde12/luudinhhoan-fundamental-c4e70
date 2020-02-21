@@ -11,7 +11,6 @@ for(i=0;i<arr.length;i++){
         found.push(i+1)
         check=true
     }
-    
 }
 console.log(found) // Check found
 
