@@ -33,21 +33,33 @@ const Product = [
     }
 ]
 Product.forEach((value, index) => {
-    console.log("#1.  " + value.Name)
+    console.log("#"+(index+1)+".  " + value.Name)
     console.log("      Price: " + value.Price)
     console.log("      Providers: " + value.Providers)
 })
-
-let UserInput = prompt("Enter Provider")
-console.clear()
-Product.forEach((value, index) => {
-    if (!(value.Providers.indexOf(UserInput) == -1)) {
-        console.log("==================================")
-        console.log("Name: " + value.Name)
-        console.log("Brand: " + value.Brand)
-        console.log("Price: " + value.Price)
-        console.log("Color: " + value.Color)
-        console.log("Category: " + value.Category)
-        console.log("Providers: " + value.Providers)
-    }
+Product.forEach((value,index)=>{
+    console.log("==================================")
+    console.log("Name: " + value.Name)
+    console.log("Price: " + value.Price)
 })
+let UserInput = prompt("Enter your category")
+console.clear()
+Product.forEach((value,index)=>{
+    if (UserInput==value.Category){
+    console.log("==================================")
+    console.log("Name: " + value.Name)
+    console.log("Price: " + value.Price)}
+})
+// let UserInput = prompt("Enter Provider")
+// console.clear()
+// Product.forEach((value, index) => {
+//     if (!(value.Providers.indexOf(UserInput) == -1)) {
+//         console.log("==================================")
+//         console.log("Name: " + value.Name)
+//         console.log("Brand: " + value.Brand)
+//         console.log("Price: " + value.Price)
+//         console.log("Color: " + value.Color)
+//         console.log("Category: " + value.Category)
+//         console.log("Providers: " + value.Providers)
+//     }
+// })
